@@ -1,0 +1,54 @@
+body{
+    font-weight: 800;
+    font-family: 'Oswald', Impact;
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+p{
+    color:coral;
+}
+div{
+    gap: 20px;
+    
+}
+img{
+    width:250px;
+   height:250px;
+   border-radius: 50%;
+}
+tr:nth-child(even){
+    background-color:darkcyan;
+}
+
+table, th, td{
+    border: 1px solid rgb(92, 92, 92);
+    border-collapse: collapse;
+}
+table a{
+    color:rgba(255, 179, 0, 0.811);
+    text-decoration: none;
+}
+th{
+    font-family: "Lobster";
+    font-weight: 100;
+}
+
+tr:hover{
+    background-color:lightgreen;
+}
+tr:hover a{
+    color: crimson;
+}
+
+.up a{
+    position: fixed;
+    nav-down: auto;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}

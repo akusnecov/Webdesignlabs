@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лабараторная работа</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <h1 id="top">Лабораторная работа 1</h1>
+    <h2>Я - Кузнецов Антон</h2>
+    <div class="photo">
+      <img
+        src="/images/profile_photo.jpg"
+        alt="Ряльно я"
+        width="40%"
+        height="20%"
+      />
+    </div>
+    <div class="up"><a href="#top">Наверх</a></div>
+
+    <div>
+      <p>
+        Учусь в Политехе на факультете НХИ (к сожалению) на 2 курсе ИСТ, где мы иногда кодим, но в основном работает в excel'e.
+      </p>
+    </div>
+    <h2>Че умею:</h2>
+
+    <ol>
+      <li>Excel</li>
+      <li>C++</li>
+      <li>В игрули играть</li>
+    </ol>
+
+    <h2>Всякое</h2>
+    <a href="https://omgtu.ru" , target="blank">Сайт </a><br />
+    <a href="tel:+79040751608">+79040751608</a><br />
+    <a href="mailto: akusnecov@mail.ru">akusnecov@mail.ru</a><br />
+
+    <h2>Список группы</h2>
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>ФИО</th>
+        <th>Возраст</th>
+        <th>Пол</th>
+        <th>Рост</th>
+        <th>Телефон</th>
+        <th>Почта</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Астрединов Ярослав Геннадьевич</td>
+        <td>19</td>
+        <td>М</td>
+        <td>183</td>
+        <td><a href="tel:+79236925011">+7-923-692-50-11</a></td>
+        <td><a href="mailto: bignose@yandex.ru">bignose@yandex.ru</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Котов Андрей Юрьевич</td>
+        <td>19</td>
+        <td>М</td>
+        <td>151</td>
+        <td><a href="tel:+79514005067">+7-951-400-50-67</a></td>
+        <td><a href="mailto: karlik@yandex.ru">karlik@yandex.ru</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Назаров Матвей Вячеславович</td>
+        <td>19</td>
+        <td>М</td>
+        <td>190</td>
+        <td><a href="tel:+79237730209">+7-923-773-02-09</a></td>
+        <td>
+          <a href="mailto: odsybeats@gmail.com">odsybeats@gmail.com</a>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Рейх Артем Андреевич</td>
+        <td>18</td>
+        <td>М</td>
+        <td>180</td>
+        <td><a href="tel:+7951111111">+7-951-111-11-11</a></td>
+        <td><a href="mailto: kaz667@mail.ru">kaz667@mail.ru</a></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Голованов Алексей Леонидович</td>
+        <td>19</td>
+        <td>М</td>
+        <td>180</td>
+        <td><a href="tel:+79640702281">+7-964-070-22-81</a></td>
+        <td><a href="mailto: mrgoogle@gmail.com">mrgoogle@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Велякин Константин Сергеевич</td>
+        <td>19</td>
+        <td>М</td>
+        <td>180</td>
+        <td><a href="tel:+79994701218">+7-999-470-12-18</a></td>
+        <td><a href="mailto: loliks@gmail.com">loliks@gmail.com</a></td>
+      </tr>
+    </table>
+
+    <input class="fio" placeholder="ФИО" type="text" />
+    <input class="age" placeholder="Возраст" type="number" />
+
+    <select class = "sex">
+      <option value="">Пол</option>
+      <option value = "М">Мужчина</option>
+      <option value = "Ж">Женщина</option>  
+    </select>
+
+    <input class ="height" placeholder="Рост" type = "number"/>
+    <input class="phone" placeholder="+7(xxx)-xxx-xx-xx" type="text" />
+    <input class="mail" placeholder="Почта" type="text" />
+
+    <button class="button">Добавить</button>
+
+    <input class="dellId" type="number" />
+    <button class="dell">Удалить</button>
+
+    <script>
+      const table = document.querySelector(".table");
+      const sex = document.querySelector(".sex");
+      const fio = document.querySelector(".fio");
+      const age = document.querySelector(".age");
+      const phone = document.querySelector(".phone");
+      const email = document.querySelector(".mail");
+      const height = document.querySelector(".height");
+
+      const button = document.querySelector(".button");
+
+      const dellId = document.querySelector(".dellId");
+      const dell = document.querySelector(".dell");
+      let id = 8;
+
+      button.addEventListener("click", () => {
+        if (fio.value && age.value && phone.value && email.value && sex.value && height.value){
+          table.innerHTML += 
+          `<tr id = '${id}'>
+              <td>${id}</td>
+              <td>${fio.value}</td>
+              <td>${age.value}</td>
+              <td>${sex.value}</td>
+              <td>${height.value}</td>
+              <td>
+                <a href="tel:${phone.value}">${phone.value}</a>
+              </td>
+              <td>
+                <a href="mailto:${email.value}">${email.value}</a>
+              </td>
+            </tr>`;
+            id++;
+          } else console.log("Нет данных");
+      });
+
+      dell.addEventListener("click", () => {
+        const delElement = document.getElementById(dellId.value);
+          if(delElement){
+            delElement.remove();
+          }
+      });
+    </script>
+  </body>
+</html>
