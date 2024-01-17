@@ -1,0 +1,25 @@
+.header__top {
+  padding: 28px 0px;
+  height: 80px;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.header__navigation {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__link {
+  color: #4c5866;
+  font-size: 20px;
+  line-height: normal;
+}
+.header__icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
