@@ -1,0 +1,54 @@
+@import "hero.css";
+@import "header.css";
+@import "result.css";
+@import "product.css";
+@import "partners.css";
+@import "sketch.css";
+@import "foot.css";
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  color: #4c5866;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  display: block;
+  border-bottom: 1px solid #dddddd;
+}
+.main {
+  display: block;
+}
+.hero {
+  padding-top: 60px;
+  overflow: hidden;
+}
+.result {
+  padding-top: 97px;
+  background-color: #ebebeb;
+}
+.product {
+  display: block;
+  padding: 90px;
+}
+.partners {
+  display: block;
+  padding: 90px 0;
+  background-color: #ebebeb;
+}
+.sketch {
+  display: block;
+  align-items: end;
+}
+.foot {
+  display: block;
+  background: #4c5866;
+}

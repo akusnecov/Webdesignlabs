@@ -1,0 +1,16 @@
+.partners__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+}
+.partners__block {
+  display: flex;
+  height: 135px;
+  border: 1px solid #c4c4c4;
+  padding: 0 23px;
+  place-content: center;
+  width: 250px;
+}
+.partners__block img {
+  margin: auto 0;
+}
